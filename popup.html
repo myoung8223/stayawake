@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>Stay Awake</header>
+
+    <div id="time" class="time">--:--</div>
+    <div id="status" class="status">Off — normal screen lock applies</div>
+    <div class="bar"><div id="fill"></div></div>
+
+    <div class="seg" role="radiogroup" aria-label="Set by">
+      <button type="button" id="modeFor" role="radio">Minutes</button>
+      <button type="button" id="modeUntil" role="radio">End time</button>
+    </div>
+
+    <form id="form" class="entry">
+      <span id="forFields" class="fields">
+        <input id="minutes" type="number" min="1" max="90" step="1"
+               inputmode="numeric" aria-label="Minutes">
+        <span class="unit">min</span>
+      </span>
+      <span id="untilFields" class="fields" hidden>
+        <input id="until" type="time" aria-label="End time">
+      </span>
+      <button id="go" type="submit" class="primary">Start</button>
+    </form>
+    <div id="note" class="note"></div>
+
+    <div id="recentWrap" hidden>
+      <div class="label">Recent</div>
+      <div id="recents" class="grid"></div>
+    </div>
+
+    <button id="stop" class="danger" hidden>Stop</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
