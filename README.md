@@ -52,3 +52,22 @@ Then:
 ## Limitation
 
 Extensions can't lock a normal user session. When the timer ends, the extension releases its hold, and ChromeOS's own idle policy decides when to lock.
+
+## Versioning
+
+Releases are numbered as simple builds: Build 1, Build 2, and so on. For each new build, increase both fields in `manifest.json`:
+
+```json
+"version": "2",
+"version_name": "Build 2"
+```
+
+Chrome uses `version` for updates, and the Web Store rejects an upload that isn't higher than the last one. `version_name` is the label shown on `chrome://extensions`. Tag GitHub releases to match, for example `build-2`.
+
+## Credits
+
+Developed by Mike Young ([@myoung8223](https://github.com/myoung8223)) with AI assistance from Anthropic Opus 5.5 Medium.
+
+## License
+
+[MIT](LICENSE) © 2026 Mike Young

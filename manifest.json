@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Stay Awake",
-  "version": "2.3.1",
+  "version": "1",
+  "version_name": "Build 1",
   "description": "Keeps a Chromebook's display awake for a chosen number of minutes or until a chosen time, up to 90 minutes. Started manually.",
   "permissions": [
     "power",
