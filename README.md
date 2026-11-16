@@ -70,7 +70,7 @@ Chrome uses `version` for updates, and the Web Store rejects an upload that isn'
 
 ## Credits
 
-Developed by Mike Young ([@myoung8223](https://github.com/myoung8223)) with AI assistance from Anthropic Opus 5.5 Medium.
+Developed by Mike Young ([@myoung8223](https://github.com/myoung8223)) using Anthropic Claude Opus 5.5 Medium.
 
 ## License
 
