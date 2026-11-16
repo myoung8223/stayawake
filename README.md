@@ -68,6 +68,10 @@ Releases are numbered as simple builds: Build 1, Build 2, and so on. For each ne
 
 Chrome uses `version` for updates, and the Web Store rejects an upload that isn't higher than the last one. `version_name` is the label shown on `chrome://extensions`. Tag GitHub releases to match, for example `build-2`.
 
+## Privacy
+
+Stay Awake doesn't collect, store, or transmit any personal or user data. Its few settings (the current countdown, recent durations and end times, and the last-used mode) are kept locally on the device in `chrome.storage.local` and are never sent anywhere. See the full [Privacy Policy](PRIVACY.md).
+
 ## Credits
 
 Developed by Mike Young ([@myoung8223](https://github.com/myoung8223)) using Anthropic Claude Opus 5.5 Medium.
