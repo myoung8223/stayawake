@@ -1,5 +1,9 @@
 # Stay Awake
 
+<p align="left">
+  <img src="images/screenshot.png" alt="Stay Awake window showing a grace period countdown" width="320">
+</p>
+
 A Chrome extension for ChromeOS that keeps a classroom Chromebook from dimming or locking for a chosen number of minutes or until a chosen clock time, up to 90 minutes. It does nothing until someone starts it.
 
 Unlike a web page using the Screen Wake Lock API, the lock is held by the extension itself (`chrome.power.requestKeepAwake("display")`). It keeps working while other windows, fullscreen slides, video, or Android apps are in front.
